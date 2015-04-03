@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/fondo">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/txtOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operacion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff72b70f"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtTitulo"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/spinOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:entries="@array/Operaciones"
+            android:prompt="@string/textoOpciones"
+            android:layout_below="@+id/txtOperacion"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/txtTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo Inmueble"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="#ff72b70f"
+            android:textSize="18dp"
+            android:layout_below="@+id/spinOperacion"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/spinTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Tipos"
+            android:prompt="@string/textoOpciones"
+            android:layout_below="@+id/txtTipo"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/txtLocalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localidad"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="#ff72b70f"
+            android:textSize="18dp"
+            android:layout_below="@+id/spinTipo"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/spinLocalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Localidades"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:prompt="@string/textoOpciones"
+            android:layout_below="@+id/txtLocalidad"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff72b70f"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@+id/spinLocalidad"
+            android:layout_alignParentLeft="true" />
+
+        <Spinner
+            android:id="@+id/spinPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Precios"
+            android:prompt="@string/textoPrecio"
+            android:layout_below="@+id/txtPrecio"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"/>
+
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logobuscar"
+            android:onClick="onClickBuscar"
+            android:layout_below="@id/spinPrecio"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/logonombre"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtOperacion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="¿Que deseas buscar?"
+            android:id="@+id/txtTitulo"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

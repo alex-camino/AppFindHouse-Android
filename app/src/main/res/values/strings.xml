@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FindHouse</string>
+    <string name="textoOpciones">Operaciones</string>
+
+    <string-array name="Operaciones">
+        <item>Seleccione la operación</item>
+        <item>Venta</item>
+        <item>Alquiler</item>
+    </string-array>
+
+    <string name="textoTipo">Tipos de Inmueble</string>
+
+    <string-array name="Tipos">
+        <item>Seleccione el Inmueble</item>
+        <item>Apartamentos</item>
+        <item>Casas y Chalés</item>
+        <item>Pisos</item>
+        <item>Alquiler para vacaciones</item>
+    </string-array>
+
+    <string name="textoLocalidad">Localidades</string>
+
+    <string-array name="Localidades">
+        <item>Seleccione la localidad</item>
+        <item>Jávea/Xàbia</item>
+        <item>Dénia</item>
+        <item>Calpe</item>
+        <item>Altea</item>
+    </string-array>
+
+    <string name="textoPrecio">Precios</string>
+
+    <string-array name="Precios">
+        <item>Seleccione el rango de precios</item>
+        <item>100</item>
+        <item>1.000</item>
+        <item>10.000</item>
+        <item>100.000</item>
+        <item>500.000</item>
+        <item>1.000.000</item>
+    </string-array>
+
+    <string name="title_activity_webview">Webview</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pantalla_bienvenida">PantallaBienvenida</string>
+
+</resources>
