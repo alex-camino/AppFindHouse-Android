@@ -48,7 +48,7 @@ public class PantallaWebview extends Activity {
 
     private String crearURL(String[] valoresParametros){
 
-        String url= "http://miprimerapp-alexcamino.rhcloud.com/webApp/buysalerent.php?";
+        String url= "http://miprimerapp-alexcamino.rhcloud.com/buysalerent.php?";
         url.concat("operacion="+valoresParametros[0]+",");
         url.concat("inmueble="+valoresParametros[1]+",");
         url.concat("localidad="+valoresParametros[2]+",");

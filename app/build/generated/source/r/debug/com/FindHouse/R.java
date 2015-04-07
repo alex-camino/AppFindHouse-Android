@@ -29,18 +29,23 @@ public final class R {
         public static final int logobuscar=0x7f020005;
         public static final int logonombre=0x7f020006;
         public static final int nombre=0x7f020007;
+        public static final int seek_thumb_disabled=0x7f020008;
+        public static final int seek_thumb_normal=0x7f020009;
+        public static final int seek_thumb_pressed=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int btnBuscar=0x7f08000d;
+        public static final int action_settings=0x7f080011;
+        public static final int btnBuscar=0x7f08000c;
         public static final int imageView=0x7f080003;
-        public static final int imageView2=0x7f08000e;
+        public static final int imageView2=0x7f08000d;
+        public static final int layoutRange=0x7f080010;
+        public static final int maxPrice=0x7f08000f;
+        public static final int minPrice=0x7f08000e;
         public static final int spinLocalidad=0x7f08000a;
-        public static final int spinOperacion=0x7f080006;
-        public static final int spinPrecio=0x7f08000c;
         public static final int spinTipo=0x7f080008;
         public static final int text_toast=0x7f080002;
         public static final int toast_mensaje=0x7f080001;
+        public static final int toggleButtonOperacion=0x7f080006;
         public static final int txtLocalidad=0x7f080009;
         public static final int txtOperacion=0x7f080004;
         public static final int txtPrecio=0x7f08000b;

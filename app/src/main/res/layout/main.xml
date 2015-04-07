@@ -32,15 +32,15 @@
             android:layout_below="@+id/txtTitulo"
             android:layout_alignParentLeft="true" />
 
-        <Spinner
-            android:id="@+id/spinOperacion"
-            android:layout_width="match_parent"
+        <ToggleButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.52"
-            android:entries="@array/Operaciones"
-            android:prompt="@string/textoOpciones"
+            android:id="@+id/toggleButtonOperacion"
+            android:textOn="Venta"
+            android:textOff="Alquiler"
             android:layout_below="@+id/txtOperacion"
-            android:layout_alignParentLeft="true" />
+            android:textStyle="bold|italic"
+            android:onClick="onToggleClicked" />
 
         <TextView
             android:id="@+id/txtTipo"
@@ -51,7 +51,7 @@
             android:textStyle="bold"
             android:textColor="#ff72b70f"
             android:textSize="18dp"
-            android:layout_below="@+id/spinOperacion"
+            android:layout_below="@+id/toggleButtonOperacion"
             android:layout_alignParentLeft="true" />
 
         <Spinner
@@ -61,7 +61,7 @@
             android:entries="@array/Tipos"
             android:prompt="@string/textoOpciones"
             android:layout_below="@+id/txtTipo"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentRight="true" />
 
         <TextView
             android:id="@+id/txtLocalidad"
@@ -98,16 +98,6 @@
             android:layout_below="@+id/spinLocalidad"
             android:layout_alignParentLeft="true" />
 
-        <Spinner
-            android:id="@+id/spinPrecio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/Precios"
-            android:prompt="@string/textoPrecio"
-            android:layout_below="@+id/txtPrecio"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="30dp"/>
-
 
         <Button
             android:id="@+id/btnBuscar"
@@ -116,7 +106,8 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/logobuscar"
             android:onClick="onClickBuscar"
-            android:layout_below="@id/spinPrecio"
+            android:layout_marginBottom="57dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
 
         <ImageView
@@ -125,17 +116,45 @@
             android:id="@+id/imageView2"
             android:src="@drawable/logonombre"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/txtOperacion" />
+            android:layout_alignLeft="@+id/txtTitulo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="¿Que deseas buscar?"
+            android:text="¿Empezamos?"
             android:id="@+id/txtTitulo"
             android:textStyle="bold"
             android:textSize="22dp"
             android:layout_below="@+id/imageView"
             android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/minPrice"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtPrecio"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/maxPrice"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtPrecio"
+            android:layout_alignRight="@+id/spinLocalidad" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/minPrice"
+            android:id="@+id/layoutRange"
+            android:layout_alignParentLeft="true"/>
+
+
     </RelativeLayout>
 </ScrollView>
